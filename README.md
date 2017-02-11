@@ -42,8 +42,10 @@ pcm.plugequal {
   type equal;
   # Modify the line below if you don't
   # want to use sound card 0.
+  
   slave.pcm "plughw:0,0";
-  # slave.pcm "plughw:1,0"; for card 1 for instance
+  # slave.pcm "plughw:1,0"; for card 1 
+
   # or if you want to use with multiple applications output to dmix
   # slave.pcm "plug:dmix"
 }
@@ -63,7 +65,7 @@ cd /etc
 sudo nano mpd.conf
 ```
 
-Search for the device entry in the audio_output and comment the entry by adding a #.
+Search for the device entry in the audio_output and comment the entry by adding a `#` at the beginning of the line.
 Create a new entry which sets the device to the EQUALIZER. "plug:plugequal"
 
 ```
