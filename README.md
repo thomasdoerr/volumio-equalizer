@@ -2,7 +2,7 @@
 
 Adding Equalization Using Alsaeq on a Volumio 2 installation
 
-## Step 1 Update System:
+## Step 1: Update System
 
 ```
 sudo apt-get update -y
@@ -52,7 +52,7 @@ pcm.!default {
 
 ```
 
-## Step 5 Change mpd Configuration
+## Step 5: Change mpd Configuration
 
 ```
 cd /etc
@@ -71,7 +71,7 @@ audio_output {
   ...                
 ```
 
-## Setp 6 Configure mpd to use the EQUALIZER
+## Setp 6: Configure mpd to use the EQUALIZER
 
 ```
 sudo -H -u mpd alsamixer -D equal
