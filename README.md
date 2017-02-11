@@ -25,11 +25,12 @@ aplay -l
 #### Raspberry pi with HiFiBerry
 ![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/volumio-with-hifiberry-dac-plus.png "Raspberry pi with HiFiBerry")
 
-#### Raspberry pi with a Sound Blaster USB Soundcard
-![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/volumio-with-soundblaster.png "Raspberry pi with Sound Blaster USB")
 
+## Step 4:
+### Set Mixer Type to Hardware
+![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/volumio-mixer-type-hardware.png "Set Mixer Type to Hardware")
 
-## Step 4: 
+## Step 5: 
 ### Configure asound.conf
 
 ```
@@ -64,7 +65,7 @@ pcm.!default {
 
 ```
 
-## Step 5: 
+## Step 6: 
 ### Change mpd Configuration
 
 ```
@@ -84,10 +85,16 @@ audio_output {
   ...                
 ```
 
-## Setp 6: 
+
+## Setp 7: 
 ### Configure mpd to use the EQUALIZER
 
 ```
 sudo -H -u mpd alsamixer -D equal
 ```
+
+![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/alsamixer.png "AlsaMixer")
+
+## Setp 8: 
+### Reboot the system
 
