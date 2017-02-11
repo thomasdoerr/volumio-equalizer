@@ -37,7 +37,7 @@ cd /etc
 sudo nano -w asound.conf
 ```
 
-Paste this into the new file
+Paste this into the new file or add it at the end, if volumio already created that file.
 
 ```
 
