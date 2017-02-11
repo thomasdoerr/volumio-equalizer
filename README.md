@@ -1,26 +1,29 @@
 # Howto install ALSA EQUALIZER on Volumio 2
 
-Adding Equalization Using Alsaeq on a Volumio 2 installation
 
-## Step 1: Update System
+## Step 1: 
+### Update System
 
 ```
 sudo apt-get update -y
 ```
 
-## Step 2: Install the alsaeq modules
+## Step 2: 
+### Install the alsaeq modules
 
 ```
 sudo apt-get install -y libasound2-plugin-equal
 ```
 
-## Step 3: Detect the device number of your sound card
+## Step 3: 
+### Detect the device number of your sound card
 
 ```
 aplay -l
 ```
 
-## Step 4: Configure asound.conf
+## Step 4: 
+### Configure asound.conf
 
 ```
 cd /etc
@@ -52,7 +55,8 @@ pcm.!default {
 
 ```
 
-## Step 5: Change mpd Configuration
+## Step 5: 
+### Change mpd Configuration
 
 ```
 cd /etc
@@ -71,7 +75,8 @@ audio_output {
   ...                
 ```
 
-## Setp 6: Configure mpd to use the EQUALIZER
+## Setp 6: 
+### Configure mpd to use the EQUALIZER
 
 ```
 sudo -H -u mpd alsamixer -D equal
