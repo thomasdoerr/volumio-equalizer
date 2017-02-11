@@ -1,4 +1,4 @@
-# Howto install ALSA EQUALIZER on Volumio 2
+# Howto install ALSA EQUALIZER on Volumio 2 with HiFiBerry
 
 
 ## Step 1: 
@@ -49,10 +49,10 @@ ctl.equal {
 pcm.plugequal {
   type equal;
   # Modify the line below if you don't
-  # want to use sound card 0.
+  # want to use sound card 1.
   
-  slave.pcm "plughw:0,0";
-  # slave.pcm "plughw:1,0"; for card 1 
+  slave.pcm "plughw:1,0";
+  # slave.pcm "plughw:0,0"; for card 0 
 
   # or if you want to use with multiple applications output to dmix
   # slave.pcm "plug:dmix"
@@ -80,7 +80,7 @@ Create a new entry which sets the device to the EQUALIZER. "plug:plugequal"
 # Audio Output ################################################################
 audio_output {
   ...
-                # device        "hw:0,0"
+                # device        "hw:1,0"
                 device          "plug:plugequal" 
   ...                
 ```
@@ -97,4 +97,11 @@ sudo -H -u mpd alsamixer -D equal
 
 ## Setp 8: 
 ### Reboot the system
+
+
+## Links:
+This article tries to summaries to following links.
+
+[https://support.hifiberry.com/hc/en-us/articles/205311292-Adding-equalization-using-alsaeq](https://support.hifiberry.com/hc/en-us/articles/205311292-Adding-equalization-using-alsaeq)
+
 
