@@ -103,5 +103,10 @@ sudo -H -u mpd alsamixer -D equal
 This article tries to summaries to following links.
 
 [https://support.hifiberry.com/hc/en-us/articles/205311292-Adding-equalization-using-alsaeq](https://support.hifiberry.com/hc/en-us/articles/205311292-Adding-equalization-using-alsaeq)
+[https://volumio.org/forum/equalizer-t45.html](https://volumio.org/forum/equalizer-t45.html)
+[http://www.hifi-forum.de/viewthread-253-600.html](http://www.hifi-forum.de/viewthread-253-600.html)
+[http://wiki.cyberleo.net/wiki/KnowledgeBase/AlsaEqual](http://wiki.cyberleo.net/wiki/KnowledgeBase/AlsaEqual)
+[https://volumio.org/forum/equalizer-t45.html](https://volumio.org/forum/equalizer-t45.html)
+[https://support.hifiberry.com/hc/en-us/community/posts/207226345-Problem-configuring-alsa-equalizer](https://support.hifiberry.com/hc/en-us/community/posts/207226345-Problem-configuring-alsa-equalizer)
 
 
