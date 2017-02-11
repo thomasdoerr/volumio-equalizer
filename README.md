@@ -21,8 +21,11 @@ sudo apt-get install -y libasound2-plugin-equal
 ```
 aplay -l
 ```
+
+#### Raspberry pi with HiFiBerry
 ![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/volumio-with-hifiberry-dac-plus.png "Raspberry pi with HiFiBerry")
 
+#### Raspberry pi with a Sound Blaster USB Soundcard
 ![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/volumio-with-soundblaster.png "Raspberry pi with Sound Blaster USB")
 
 
