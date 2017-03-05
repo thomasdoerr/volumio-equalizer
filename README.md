@@ -49,16 +49,17 @@ ctl.equal {
 pcm.plugequal {
   type equal;
   # Modify the line below if you don't
-  # want to use sound card 1.
-  
+  # want to use sound card 0.
   slave.pcm "plughw:1,0";
-  # slave.pcm "plughw:0,0"; for card 0 
-
   # or if you want to use with multiple applications output to dmix
   # slave.pcm "plug:dmix"
 }
 
-pcm.!default {
+#pcm.equal {
+  # Or if you want the equalizer to be your
+  # default soundcard uncomment the following
+  # line and comment the above line.
+  pcm.!default {
   type plug;
   slave.pcm plugequal;
 }
@@ -95,6 +96,8 @@ sudo -H -u mpd alsamixer -D equal
 
 ![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/alsamixer.png "AlsaMixer")
 
+![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/alsamixer-custom-settings.png "AlsaMixer Custom Settings")
+
 ## Setp 8: 
 ### Reboot the system
 
@@ -103,10 +106,15 @@ sudo -H -u mpd alsamixer -D equal
 This article tries to summaries to following links.
 
 [https://support.hifiberry.com/hc/en-us/articles/205311292-Adding-equalization-using-alsaeq](https://support.hifiberry.com/hc/en-us/articles/205311292-Adding-equalization-using-alsaeq)
+
 [https://volumio.org/forum/equalizer-t45.html](https://volumio.org/forum/equalizer-t45.html)
+
 [http://www.hifi-forum.de/viewthread-253-600.html](http://www.hifi-forum.de/viewthread-253-600.html)
+
 [http://wiki.cyberleo.net/wiki/KnowledgeBase/AlsaEqual](http://wiki.cyberleo.net/wiki/KnowledgeBase/AlsaEqual)
+
 [https://volumio.org/forum/equalizer-t45.html](https://volumio.org/forum/equalizer-t45.html)
+
 [https://support.hifiberry.com/hc/en-us/community/posts/207226345-Problem-configuring-alsa-equalizer](https://support.hifiberry.com/hc/en-us/community/posts/207226345-Problem-configuring-alsa-equalizer)
 
 
