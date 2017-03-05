@@ -1,8 +1,8 @@
-# Howto install ALSA EQUALIZER on Volumio 2 with HiFiBerry
+# How to install ALSA EQUALIZER on Volumio 2 with HiFiBerry
 
 
 ## Step 1: 
-### Update System
+### Update the system
 
 ```
 sudo apt-get update -y
@@ -27,7 +27,7 @@ aplay -l
 
 
 ## Step 4:
-### Set Mixer Type to Hardware
+### Set the mixer type to hardware
 ![alt text](https://github.com/thomasdoerr/volumio-equalizer/blob/master/images/volumio-mixer-type-hardware.png "Set Mixer Type to Hardware")
 
 ## Step 5: 
@@ -67,7 +67,7 @@ pcm.plugequal {
 ```
 
 ## Step 6: 
-### Change mpd Configuration
+### Change the mpd configuration
 
 ```
 cd /etc
@@ -88,7 +88,7 @@ audio_output {
 
 
 ## Setp 7: 
-### Configure mpd to use the EQUALIZER
+### Configure the mpd to use the EQUALIZER
 
 ```
 sudo -H -u mpd alsamixer -D equal
@@ -103,7 +103,7 @@ sudo -H -u mpd alsamixer -D equal
 
 
 ## Links:
-This article tries to summaries to following links.
+This article tries to summaries to following links. I documents the way, it worked on my raspberry pi 3 with HiFiBerry. It didn't work on the same device with a Sound Blaster USB device instead of HiFiBerry.
 
 [https://support.hifiberry.com/hc/en-us/articles/205311292-Adding-equalization-using-alsaeq](https://support.hifiberry.com/hc/en-us/articles/205311292-Adding-equalization-using-alsaeq)
 
