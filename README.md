@@ -84,7 +84,8 @@ audio_output {
   ...
                 # device        "hw:1,0"
                 device          "plug:plugequal" 
-  ...                
+  ...  
+}              
 ```
 
 
