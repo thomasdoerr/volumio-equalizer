@@ -62,6 +62,7 @@ pcm.plugequal {
   pcm.!default {
   type plug;
   slave.pcm plugequal;
+  }
 }
 
 ```
