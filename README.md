@@ -59,11 +59,11 @@ pcm.plugequal {
   # Or if you want the equalizer to be your
   # default soundcard uncomment the following
   # line and comment the above line.
-  pcm.!default {
+pcm.!default {
   type plug;
   slave.pcm plugequal;
-  }
 }
+
 
 ```
 
