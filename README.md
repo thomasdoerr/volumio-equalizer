@@ -1,6 +1,6 @@
 # How to install ALSA EQUALIZER on Volumio 2 with HiFiBerry
 
-[Update] Before you start setting up the equalizer like I described here, have a look at the one, Balbuze wrote as a verry simple to use and perfect plugin: https://github.com/balbuze/volumio-plugins/tree/master/plugins/miscellanea/volsimpleequal
+[Update] Before you start setting up the equalizer like I described here, have a look at the one Balbuze wrote as a very simple to use and perfect plugin: https://github.com/balbuze/volumio-plugins/tree/master/plugins/miscellanea/volsimpleequal
 
 
 ## Step 1: 
